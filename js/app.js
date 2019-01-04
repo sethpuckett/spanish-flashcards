@@ -56,7 +56,7 @@ function loadSpreadsheet(key) {
 }
 
 function handleInitError() {
-  handleError("There was an error loading your spreadsheet. Please double-check your key and ensure the spreadsheet is published to the web with sharing set to 'Anyone with the link'. See <a href='https://github.com/sethpuckett/flashcards' target='_blank'>the user guide</a> for more info.");
+  handleError("There was an error loading your spreadsheet. Please double-check your key and ensure the spreadsheet is published to the web with sharing set to 'Anyone with the link'. See <a href='https://github.com/sethpuckett/spanish-flashcards' target='_blank'>the user guide</a> for more info.");
 }
 
 function handleError(message) {
@@ -71,7 +71,7 @@ function handleError(message) {
 function loadNewSpreadsheetKey() {
   sel("#load-new-key-container").style.display = 'none';
   sel("#load-key-container").style.display = 'block';
-  sel("#start-instructions").innerHTML = "Enter a public spreadsheet key above. See <a href='https://github.com/sethpuckett/flashcards' target='_blank'>the user guide</a> for more info.";
+  sel("#start-instructions").innerHTML = "Enter a public spreadsheet key above. See <a href='https://github.com/sethpuckett/spanish-flashcards' target='_blank'>the user guide</a> for more info.";
   sel("#btn-hide-guide").style.display = 'none';
 }
 
@@ -277,7 +277,7 @@ function loadAllDecks(data, tabletop) {
 
   if (errorSheets.length > 0) {
     listString = errorSheets.join(', ');
-    handleError(`Unable to load flashcards. The following sheets have errors: ${listString}. Sheets must have exactly 2 columns and an optional 'notes' column. See <a href='https://github.com/sethpuckett/flashcards' target='_blank'>the user guide</a> for more info.`)
+    handleError(`Unable to load flashcards. The following sheets have errors: ${listString}. Sheets must have exactly 2 columns and an optional 'notes' column. See <a href='https://github.com/sethpuckett/spanish-flashcards' target='_blank'>the user guide</a> for more info.`)
     return;
   }
 
